@@ -4,8 +4,18 @@
 <head>
  <meta charset="UTF-8">
 <style type = "text/css">
+
+body {
+  background-image:url('QuarterlyScentedEwe-size_restricted.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+
 div#memory_board {
-	background:   #d9f2e6;
+	background:   #a9abaf;
 	border: #999 1px solid;
 	width: 800px;
 	height: 540px;
@@ -14,7 +24,7 @@ div#memory_board {
 }
 
 div#memory_board > div {
-	background: url(tiles_img.png) no-repeat;
+	background: url(tiles_img.jpeg) no-repeat;
 	border: #000 1px solid;
 	width: 71px;
 	height: 71px;
@@ -80,9 +90,9 @@ function memoryFlipTile (tile, val) {
 			var tile_1 = document.getElementById(memory_tile_ids[0]);
 			var tile_2 = document.getElementById(memory_tile_ids[1]);
 			
-			tile_1.style.background = 'url(tiles_img.png) no-repeat'
+			tile_1.style.background = 'url(tiles_img.jpeg) no-repeat'
 			tile_1.innerHTML="";
-			tile_2.style.background = 'url(tiles_img.png) no-repeat'
+			tile_2.style.background = 'url(tiles_img.jpeg) no-repeat'
 			tile_2.innerHTML="";
 			
 			memory_values = [];
@@ -99,6 +109,11 @@ function memoryFlipTile (tile, val) {
 </script>
 </head>
 <body>
+
+
+			<h2 style='text-align:center; margin-top: 50px; font-family:Lucida Sans Unicode; color:white' > This is a memory game where you need to match pairs of tiles. <br> Playing is very simple - you turn over one tile and then try to find a matching tile. </h2>
+	
+
 
 <div id="memory_board"></div>
 <script>newBoard();</script>
