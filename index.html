@@ -2,16 +2,20 @@
 
 <html>
 <head>
+
  <meta charset="UTF-8">
+	
+	
 <style type = "text/css">
 
 body {
-  background-image:url('QuarterlyScentedEwe-size_restricted.gif');
+  background-image:url('');
     background-size:100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
     height:100%;
     width:100%;
+	padding-top: 10px;
 }
 
 div#memory_board {
@@ -21,6 +25,7 @@ div#memory_board {
 	height: 540px;
 	padding: 24px;
 	margin: 0px auto;
+	
 }
 
 div#memory_board > div {
@@ -37,7 +42,37 @@ div#memory_board > div {
 
 }
 
+.header p {
+				font-family: 'Lora', serif;
+				font-style: italic;
+				font-size: 23px;
+				letter-spacing: -.01em;
+				color: #5a6770;
+}
 
+.header h1 {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 47px;
+				color: #5a6770;
+				font-weight: 700;
+				letter-spacing: -1.5px;
+				line-height: 95px;
+				text-align: left;
+}
+
+hr.green-band {
+				width: 100px;
+				height: 9px;
+				background-color: black;
+				margin-left: 0px;
+				margin-top: 20px;
+				}
+
+button {
+background-image: url("betablack.jpg");
+}
+				
+				
 </style>
 <script>
 
@@ -110,14 +145,25 @@ function memoryFlipTile (tile, val) {
 </head>
 <body>
 
+ 
+<a href = " https://cosang.github.io/portfolio/" style = "color:#5a6770; float:right; padding-right:30px;">Back to portfolio page</a>
 
-			<h2 style='text-align:center; margin-top: 50px; font-family:Lucida Sans Unicode; color:white' > This is a memory game where you need to match pairs of tiles. <br> Playing is very simple - you turn over one tile and then try to find a matching tile. </h2>
-	
+
+<div class = "header">
+
+			<h1> Memory game </h1>
+			<p> This is a memory game where you need to match pairs of tiles. Playing is very simple - you turn over one tile and then try to find a matching tile.
+			<br> Have fun!
+			</p>
+	<hr class="green-band">
+</header>
+
+
+		
 
 
 <div id="memory_board"></div>
 <script>newBoard();</script>
-
 </body>
 
 </html>
